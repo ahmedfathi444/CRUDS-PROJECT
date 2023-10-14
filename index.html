@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css.map">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="container py-4">
+    <label class="mb-2 text-white" for="productName">ProductName :</label>
+    <input type="text" class="w-100 border border-1 rounded p-2 mb-3 text-white" id="productName" placeholder="Name">
+
+    <label class="mb-2  text-white" for="productPrice">ProductPrice :</label>
+    <input type="number" class="w-100 border border-1 rounded p-2 mb-3 text-white" id="productPrice" placeholder="Price">
+
+    <label class="mb-2 text-white" for="productCategory">productCategory :</label>
+    <select class="w-100 border border-1 rounded p-2 mb-3 text-white"  id="productCategory">
+      <option class="text-dark" value="tv">Tv</option>
+      <option class="text-dark" value="mobile">mobile</option>
+      <option class="text-dark" value="furniture">furniture</option>
+    </select>
+    <label class="mb-2 text-white" for="productDescription">ProductDescription :</label>
+    <textarea class="w-100 border border-1 rounded p-2 mb-3 text-white" cols="5" rows="5" id="productDescription" placeholder="Description"></textarea>
+
+    <button onclick="addProduct()" id="addBtn" class=" text-white btn btn-outline-secondary"> Add Product </button>
+    <button onclick="updateProduct()" id="updateBtn" class=" btn btn-outline-warning d-none"> Update Product </button>
+    <button onclick="clearForm()" class="btn btn-outline-danger">Clear Form </button>
+
+    <input type="text" id="searchInput" oninput="search(this.value)" placeholder="Search by name...." class="d-block border border-1 rounded p-2 mb-3 text-white mt-5 w-75 mx-auto">
+
+<div class="table-responsive-sm">
+
+  <table class="mt-5 text-center table table-color table-striped table-hover table-bordered border-secondary caption-top">
+    <caption class="text-white">List Of Products</caption>
+    <thead >
+      <tr>
+        <td>Index</td>
+        <td>Product Name</td>
+        <td>Product Price</td>
+        <td>Product Category</td>
+        <td>Product Description</td>
+        <td>Update</td>
+        <td>Delete</td>
+      </tr>
+    </thead>
+
+   <tbody id="tableData" class="">
+    
+    <!-- <tr>
+      <td>0</td>
+      <td >iphone</td>
+      <td>5000</td>
+      <td>Mobile</td>
+      <td>Good</td>
+      <td><button class="btn btn-outline-warning rounded">Update</button></td>
+      <td><button class="btn btn-outline-danger rounded">Delete</button></td>
+    </tr> -->
+
+    
+    
+    
+  
+   </tbody>
+  </table>
+</div>
+
+  </div>
+
+
+
+
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>

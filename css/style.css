@@ -1,0 +1,18 @@
+textarea{
+    resize: none;
+}
+body{
+    background-color:#3D0C11;
+    
+}
+input,select,textarea{
+    background-color: transparent;
+}
+
+form input{
+    outline: none;
+}
+
+.table-color{
+    background-color: #F9DEC9;
+}
